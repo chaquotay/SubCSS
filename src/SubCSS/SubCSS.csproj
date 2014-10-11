@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7ECC0EC1-FC23-4B8D-90EB-51F45D27CE49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SubCSS</RootNamespace>
+    <AssemblyName>SubCSS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ast\BaseSelector.cs" />
+    <Compile Include="Ast\ClassSelector.cs" />
+    <Compile Include="Ast\ICssElement.cs" />
+    <Compile Include="Ast\ISelectorVisitable.cs" />
+    <Compile Include="Ast\ISelectorVisitor.cs" />
+    <Compile Include="Matcher\ClassConstraint.cs" />
+    <Compile Include="Matcher\ConstraintBuilder.cs" />
+    <Compile Include="Matcher\IElementConstraint.cs" />
+    <Compile Include="Matcher\IObjectNavigator.cs" />
+    <Compile Include="Matcher\MultiConstraint.cs" />
+    <Compile Include="Matcher\NullConstraint.cs" />
+    <Compile Include="Matcher\PseudoClassConstraint.cs" />
+    <Compile Include="Matcher\SelectorInterpreter.cs" />
+    <Compile Include="Matcher\SelectorMatcher.cs" />
+    <Compile Include="Matcher\Specificity.cs" />
+    <Compile Include="Matcher\StyleSheetMatcher.cs" />
+    <Compile Include="Matcher\TypeConstraint.cs" />
+    <Compile Include="Ast\PseudoClassSelector.cs" />
+    <Compile Include="Ast\RestrictingSelector.cs" />
+    <Compile Include="Ast\SimpleSelector.cs" />
+    <Compile Include="Ast\UniversalSelector.cs" />
+    <Compile Include="Ast\ISelector.cs" />
+    <Compile Include="Parser\LexerRule.cs" />
+    <Compile Include="Parser\MatchableCharacterSequence.cs" />
+    <Compile Include="Parser\ParseException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ast\Property.cs" />
+    <Compile Include="Ast\RuleSet.cs" />
+    <Compile Include="Ast\StyleSheet.cs" />
+    <Compile Include="Parser\SubCssLexer.cs" />
+    <Compile Include="Parser\SubCssParser.cs" />
+    <Compile Include="Parser\Token.cs" />
+    <Compile Include="Parser\TokenType.cs" />
+    <Compile Include="Ast\TypeSelector.cs" />
+    <Compile Include="StyleSheets.cs" />
+    <Compile Include="Quantity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

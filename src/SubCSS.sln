@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubCSS", "SubCSS\SubCSS.csproj", "{7ECC0EC1-FC23-4B8D-90EB-51F45D27CE49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubCSS.Tests", "SubCSS.Tests\SubCSS.Tests.csproj", "{6C03F594-9A5D-416A-BAFF-6DDE26B3DC23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.WinForms", "Demo.WinForms\Demo.WinForms.csproj", "{B23B0610-95D5-485F-9125-A8A7C43D4DD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ECC0EC1-FC23-4B8D-90EB-51F45D27CE49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ECC0EC1-FC23-4B8D-90EB-51F45D27CE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ECC0EC1-FC23-4B8D-90EB-51F45D27CE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ECC0EC1-FC23-4B8D-90EB-51F45D27CE49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C03F594-9A5D-416A-BAFF-6DDE26B3DC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C03F594-9A5D-416A-BAFF-6DDE26B3DC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C03F594-9A5D-416A-BAFF-6DDE26B3DC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C03F594-9A5D-416A-BAFF-6DDE26B3DC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B23B0610-95D5-485F-9125-A8A7C43D4DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23B0610-95D5-485F-9125-A8A7C43D4DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23B0610-95D5-485F-9125-A8A7C43D4DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B23B0610-95D5-485F-9125-A8A7C43D4DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
